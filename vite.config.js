@@ -12,10 +12,10 @@ export default defineConfig({
     vueJsx(),
     vueDevTools(),
   ],
+  publicPath: '/lemon-wares/', 
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
-      // Add alias for 'swarmauri' to make sure Vite resolves it correctly
       'swarmauri': fileURLToPath(new URL('node_modules/swarmauri/main.js', import.meta.url)),
     },
   },
