@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       screens: {
-        'sm': { 'max': '600px' },   // Small devices (phones)
-        'md': { 'min': '810px' },   // Medium devices (tablets)
-        'lg': { 'min': '850px' },  // Large devices (desktops)
-        'xl': { 'min': '1279px' },  // Extra large devices (large desktops)
-        '2xl': { 'max': '1535px' }, // 2X extra large devices
+        'sm': { 'max': '600px' },   
+        'md': { 'min': '810px' },  
+        'lg': { 'min': '850px' },  
+        'xl': { 'min': '1279px' },  
+        '2xl': { 'max': '1535px' }, 
       },
       colors: {
         'primary-color': '#B00000',
