@@ -12,8 +12,9 @@ export default defineConfig({
     vueJsx(),
     vueDevTools(),
   ],
-  publicPath: '/lemon-wares/', 
-  resolve: {
+ base: process.env.NODE_ENV === 'production'
+    ? '/lemon-wares/'
+    : '/',  resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       'swarmauri': fileURLToPath(new URL('node_modules/swarmauri/main.js', import.meta.url)),
